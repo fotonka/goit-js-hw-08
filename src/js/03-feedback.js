@@ -32,7 +32,7 @@ function updateInput(e) {
   if (localStorage.getItem('feedback-form-state') === null) {
     return;
   }
-  parsed = JSON.parse(localStorage.getItem('feedback-form-state'));
+  const parsed = JSON.parse(localStorage.getItem('feedback-form-state'));
   form.elements.email.value = parsed.email;
   form.elements.message.value = parsed.message;
 }
